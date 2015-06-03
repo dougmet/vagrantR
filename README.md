@@ -19,7 +19,9 @@ Play with R. When you're done type
 
 ```
 > vagrant halt
-``` to shutdown but save the machine and
+```
+
+to shutdown but save the machine and
 
 ```
 > vagrant destroy
