@@ -10,7 +10,10 @@ apt-get -y -q install r-base-dev
 
 # You need these packages if you're going to install devtools
 apt-get -y -q install libcurl4-openssl-dev libxml2-dev
- 
+
+# Useful for checking in the project from RStudio
+apt-get -y -q install git
+
 # You need this for Sweave, if you need Sweave
 #apt-get -y install texlive texinfo
 
