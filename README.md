@@ -1,4 +1,4 @@
-# vagrantTest
+# vagrantR
 A demo of using Vagrant together with R
 
 All you're meant to do with this repo is run
