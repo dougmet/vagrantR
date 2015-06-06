@@ -4,8 +4,8 @@ A demo of using Vagrant together with R
 All you're meant to do with this repo is run
 
 ```
-> git clone https://github.com/dougmet/vagrantTest.git 
-> cd vagrantTest
+> git clone https://github.com/dougmet/vagrantR.git 
+> cd vagrantR
 > vagrant up
 ```
 
