@@ -6,6 +6,9 @@ Rver="3.1.2"
 
 apt-get -qq update
 
+# Make user in the staff group
+addgroup vagrant staff
+
 # Install R
 echo 'deb http://www.stats.bris.ac.uk/R/bin/linux/ubuntu trusty/' >> /etc/apt/sources.list
 apt-key adv --keyserver keyserver.ubuntu.com --recv-keys E084DAB9
