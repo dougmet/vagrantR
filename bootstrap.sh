@@ -14,8 +14,9 @@ echo 'deb http://www.stats.bris.ac.uk/R/bin/linux/ubuntu trusty/' >> /etc/apt/so
 apt-key adv --keyserver keyserver.ubuntu.com --recv-keys E084DAB9
 apt-get -qq update
 # Specifically version 3.1.2
-apt-get -y -qq install r-base-core=$Rver-1trusty0
-apt-get -y -qq install r-base-dev=$Rver-1trusty0
+apt-get -y -qq install r-base-core=$Rver*
+apt-get -y -qq install r-base-dev=$Rver*
+apt-get -y -qq install r-recommended=$Rver*
 
 # You need these packages if you're going to install devtools
 apt-get -y -qq install libcurl4-openssl-dev libxml2-dev
