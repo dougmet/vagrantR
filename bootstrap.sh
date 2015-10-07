@@ -4,10 +4,15 @@
 checkpointDate="2014-11-15"
 Rver="3.1.2"
 
-apt-get -qq update
+# Set the mirrors we'll be using
+cranMirror="http://mran.revolutionanalytics.com/snapshot/"$checkpointDate
+rCranMirror="http://cran.rstudio.com"
 
-# Install R
-echo 'deb http://www.stats.bris.ac.uk/R/bin/linux/ubuntu trusty/' >> /etc/apt/sources.list
+# Set some user permissions
+addgroup vagrant staff
+
+# Install R (still using normal mirror)
+echo "deb "$rCranMirror"/bin/linux/ubuntu trusty/" >> /etc/apt/sources.list
 apt-key adv --keyserver keyserver.ubuntu.com --recv-keys E084DAB9
 apt-get -qq update
 # Specifically version 3.1.2
@@ -23,6 +28,13 @@ apt-get -y -qq install git
 # You need this for Sweave, if you need Sweave
 #apt-get -y install texlive texinfo
 
+# Set the Rprofile.site with the right mirror
+# ## Example of Rprofile.site
+echo -e "local({\n  r <- getOption(\"repos\")\n\
+	r[\"CRAN\"] <- \
+\""$cranMirror"\"\n\
+  options(repos = r)\n\
+})\n" >> /etc/R/Rprofile.site
 
 # Install specific R packages
 # I think these will be installed as root.

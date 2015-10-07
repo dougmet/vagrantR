@@ -4,6 +4,7 @@ checkDate <- commandArgs(TRUE)[2]
 Rver <- commandArgs(TRUE)[3] # Not currently used
 
 # Set a mirror on the right date
+# Is this necessary now we've set the Rprofile.site mirror?
 cranMirror <- paste0("http://mran.revolutionanalytics.com/snapshot/", checkDate)
 options(repos=structure(c(CRAN=cranMirror)))
 
