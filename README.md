@@ -1,4 +1,6 @@
-# vagrantR
+# Building R Time Machines
+
+> Build a box with R and a package inventory as it was in the past
 
 A demo using Vagrant together with R. This has been updated to be a proof-of-concept inspired by the checkpoint package from [Revolution Analytics](http://blog.revolutionanalytics.com/2014/10/introducing-rrt.html) that connects to daily snapshots of the CRAN mirror. You can then specify an R version and a date and build R as it would have been on that day.
 
