@@ -16,7 +16,9 @@ All you're meant to do with this repo is run
 
 and it will pull in the base Ubuntu box. Update and install R 3.1.2 (default), install zoo and ggplot2 from 2014-11-15 (default), pull in RStudio and set it running. You then go to your browser and navigate to
 
+```
 http://localhost:8787
+```
 
 Log in as username: vagrant, password: vagrant
 
